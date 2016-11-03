@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}  {{ title }} {% endblock %}
+
+{% block css %} <link rel="stylesheet" href="/stylesheets/default.css"> {% endblock %}
+
+{% block nav %}
+<ul class="nav-content">
+    <li><a href="#" class="active">资讯</a></li>
+    <li><a href="#">区块浏览器</a></li>
+    <li><a href="#">钱包</a></li>
+    <li><a href="#">比特币交易</a></li>
+    <li><a href="#">其他</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="main-body">
+  <div class="row">
+    <div class="panel-body">
+       <div class="search-body">
+           <div class="search-label">搜索比特币相关信息</div>
+           <div class="search-panel">
+               <input type="text" placeholder="BTC.COM">
+               <input type="button" value="搜索">
+           </div>
+           <div class="owner">
+               <span class="ourTeam">©BTC团队版权所有</span>
+               <span class="ourContact">
+                   <a href="#">关于我们</a>
+                   <a href="#">联系我们</a>
+               </span>
+           </div>
+       </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block js %}
+   <script>
+
+   </script>
+{% endblock %}

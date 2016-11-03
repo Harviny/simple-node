@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}  {{ title }} {% endblock %}
+
+{% block css %} <link rel="stylesheet" href="/stylesheets/default.css"> {% endblock %}
+
+{% block nav %}
+<ul class="nav-content">
+    <div class="nav-search-panel">
+        <input type="text" placeholder="输入食品名称或条码下方数字">
+        <input type="button" value="搜索">
+    </div>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="main-body">
+    <div class="row">
+        <div class="panel-body">
+            <div class="result-body">
+                <div class></div>
+                <div class="owner">
+                    <span class="ourTeam">©食分团队版权所有</span>
+                    <span class="ourContact">
+                       <a href="#">关于我们</a>
+                       <a href="#">联系我们</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
+{% endblock %}
